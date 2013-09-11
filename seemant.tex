@@ -1,132 +1,278 @@
-%!TEX TS-program = xelatex
-\documentclass[]{friggeri-cv}
-\addbibresource{bibliography.bib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\usepackage{fontawesome}
+%\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
 
 \begin{document}
-\header{adrien}{friggeri}
-       {social network analyst}
 
+\header{seemant}{kulleen}{executive, Products \& Support}
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
 
-% In the aside, each new line forces a line break
-\begin{aside}
-  \section{about}
-    31 rue Smith
-    69002 Lyon
-    France
-    ~
-    \href{mailto:adrien@friggeri.net}{adrien@friggeri.net}
-    \href{http://friggeri.net}{http://friggeri.net}
-    \href{http://facebook.com/adrien}{fb://adrien}
-  \section{languages}
-    bilingual french/english
-    spanish \& italian notions
-  \section{programming}
-    {\color{red} $\varheartsuit$} JavaScript
-    (ES5, node.js)
-    Python, C, OCaml
-    CSS3 \& HTML5
+\begin{aside} % In the aside, each new line forces a line break
+
+\section{\scriptsize \faicon{envelope}}
+\href{mailto:seemantk@gmail.com}{Gmail: seemant\textbf{k}}
+%--------------------------
+\section{\href{tel:617.407.0446}{\scriptsize \faicon{phone}}}
+\href{tel:617.407.0446}{+1 (617) 407 0446}
+%--------------------------
+\section{\scriptsize \faicon{facetime-video}}
+\href{skype:seemantk}{{\color{LightGray}Skype:} seemant\textbf{k}}
+%--------------------------
+\section{{\scriptsize \faicon{home}}}
+248 third street
+\# 507
+oakland
+ca 94607
+%--------------------------
+\section{\href{http://www.github.com/seemantk}{{\scriptsize \faicon{github}}} ~ \href{http://www.twitter.com/seemantk}{{\scriptsize \faicon{twitter}}} ~ \href{http://www.linkedin.com/in/seemantk}{{\scriptsize \faicon{linkedin-sign}}}}
+seemant\textbf{k}
+~
+%--------------------------
+\section{{\scriptsize \faicon{user} \faicon{group}}}
+customer success
+customer loyalty
+user experience
+product management
+data-driven strategy
+product development
+executive management
+team dynamics
+empathic leadership
+data visualization
+~
+%--------------------------
+\section{{\scriptsize \faicon{laptop}}}
+{d3
+javascript, ruby
+python, django
+css3, html5
+linux, bash
+c, c++}
+%--------------------------
+%\section{\scriptsize \faicon{microphone} \faicon{trophy} \faicon{beaker} \faicon{book}}
+%{\faicon{arrow-down}}
+%--------------------------
 \end{aside}
+%----------------------------------------------------------------------------------------
+%	EMPLOYMENT EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
 
-\section{interests}
-
-complex networks, social networks, community detection, community structure,
-overlapping communities, information diffusion, viral marketing, social
-inference, recommendation, data mining
-
-\section{education}
+\section{{}{} {\normalsize\faicon{road}}}
 
 \begin{entrylist}
-  \entry
-    {since 2009}
-    {Ph.D. {\normalfont candidate in Computer Science}}
-    {DNET/INRIA, LIP/ÉNS de Lyon}
-    {\emph{A Quantified Theory of Social Cohesion.}}
-  \entry
-    {2007–2008}
-    {M.Sc. magna cum laude}
-    {IXXI, École Normale Supérieure de Lyon}
-    {Majoring in Computer Science\\
-    Specialization in Complex Systems}
-  \entry
-    {2006–2007}
-    {B.Sc. magna cum laude}
-    {École Normale Supérieure de Lyon}
-    {Majoring in Computer Science}
-  \entry
-    {2003–2006}
-    {Classes Préparatoires aux Grandes Écoles}
-    {Lycée Fénelon, Lycée Louis le Grand, Paris}
-    {Preparation for national competitive entrance exams to leading French ``grandes écoles'', specializing in mathematics and physics.}
-  \entry
-    {2003}
-    {French Baccalauréat S. with honors}
-    {Lycée Louis le Grand, Paris}
-    {Specialization in mathematics and physics}
+%------------------------------------------------
+% Engine Yard
+%------------------------------------------------
+\entry
+{2012--2013}
+{Engine Yard}
+{business manager, Support \& Services}
+{{\tiny \faicon{double-angle-right}} ~ Productized Customer Support \& Professional Services offerings.\\
+{\tiny \faicon{double-angle-right}} ~ Created \& documented \emph{SOC-2}-compliant Customer Support Policy.
+\\{\tiny \faicon{bar-chart}} ~ Increased upsell rate by 15\%.}
+%------------------------------------------------
+\entry
+{2012}
+{~}
+{product management executive, Cloud}
+{{\tiny \faicon{double-angle-right}} ~ Created process \& workflow to ensure consideration of internal \& external feedback.\\
+{\tiny \faicon{double-angle-right}} ~ Integrated PM, QA \& documentation into product development \& release process.\\
+{\tiny \faicon{bar-chart}} ~  Introduced (weekly) cadenced release cycles into agile development workflow.}
+%------------------------------------------------
+\entry
+{2011--2012}
+{~}
+{director, Customer Support}
+{{\tiny \faicon{double-angle-right}} ~ Transitioned adrenaline-driven emergency responses to process-driven events.\\
+{\tiny \faicon{bar-chart}} ~ Increased employee loyalty from 60\% to above 90\%.\\
+{\tiny \faicon{bar-chart}} ~ Expanded support offerings to cover 100\% of customers.\\
+}
+%------------------------------------------------
+% Brontes/3M
+%------------------------------------------------
+\entry
+{2009--2011}
+{3M \& Brontes Technologies}
+{global manager, Integration \& Customer Service}
+{{\tiny \faicon{double-angle-right}} ~ Scaled logistics \& escalation processes for EU and US support centers.\\
+{\tiny \faicon{double-angle-right}} ~ Trained \& mentored EU-based support engineers.\\
+{\tiny \faicon{trophy}} ~ 2\textsuperscript{nd} mentored employee nominated for 3M Pyramid of Excellence award.}
+%------------------------------------------------
+\entry
+{2009}
+{~}
+{global technical lead, Customer Service}
+{{\tiny \faicon{double-angle-right}} ~ Represented voice of customer  in product strategy \& roadmap planning process.\\
+{\tiny \faicon{double-angle-right}} ~ Updated procedures, processes \& documents to \emph{EU}-compliance.\\
+{\tiny \faicon{trophy}} ~ 1\textsuperscript{st} mentored employee nominated \& awarded Pyramid of Excellence.}
+%------------------------------------------------
+\entry
+{2007--2009}
+{~}
+{founder \& lead application specialist, Customer Service}
+{{\tiny \faicon{double-angle-right}} ~ Founded customer service as part of initial go-to-market.\\
+{\tiny \faicon{double-angle-right}} ~ Created systems, processes \& procedures for issue tracking, escalation \& resolution.\\
+{\tiny \faicon{bar-chart}} ~ Hired, trained \& mentored 2 level I reps \& 2 level II hardware engineers.} 
+%------------------------------------------------
+\entry
+{2005--2007}
+{~}
+{senior software engineer, Systems \& IT}
+{{\tiny \faicon{double-angle-right}} ~ Updated \& modernized development toolchain, workflow, tools.\\
+{\tiny \faicon{double-angle-right}} ~ Wrote image capture libraries \& \emph{HIPAA}-compliant data concept framework.\\
+{\tiny \faicon{double-angle-right}} ~ Secured/hardened IT infrastructure (auth. \& auth./network/systems/services).\\}
+%------------------------------------------------
+% Gentoo Linux
+%------------------------------------------------
+\entry
+{2004--2007}
+{Gentoo Linux}
+{trustee, Gentoo Foundation Board}
+{{\tiny \faicon{double-angle-right}} ~ Co-authored \& edited non-profit charter documents.\\
+{\tiny \faicon{double-angle-right}} ~ Liaised with legal counsel for 501(c)6 status filing.\\
+{\tiny \faicon{bar-chart}} ~ Re-elected twice to board of 11 trustees.}
+%------------------------------------------------
+\entry
+{2003-2007}
+{~}
+{member, Gentoo Council}
+{{\tiny \faicon{double-angle-right}} ~ Represented Developer Relations \& User Relations in council sessions.\\
+{\tiny \faicon{bar-chart}} ~ Rebuilt team in 90 days following project fork.\\
+{\tiny \faicon{bar-chart}} ~ Re-elected 4 times to council of 7 representatives.}
+%------------------------------------------------
+\entry
+{2002--2007}
+{~}
+{head, Development \& Operations}
+{{\tiny \faicon{double-angle-right}} ~  Created \& implemented organizational structure for rapidly growing team.\\
+{\tiny \faicon{microphone}} ~ Represented Gentoo at LinuxWorldExpo, GDC \& CES conferences.\\
+{\tiny \faicon{bar-chart}} ~ Grew volunteer team from 15 to 250 \& users from 750 to \sim 1.5 million in 24 months.}
+%------------------------------------------------
+\entry
+{2002-2007}
+{~}
+{developer}
+{{\tiny \faicon{double-angle-right}} ~ Introduced triage process for timely \& efficient handling of user issues.\\
+{\tiny \faicon{double-angle-right}} ~ Integrated user feedback into development process.\\
+{\tiny \faicon{double-angle-right}} ~ Wrote/edited/maintained ebuilds, eclasses, end-user documentation.\\
+}
+%------------------------------------------------
+% Countrywide
+%------------------------------------------------
+\entry
+{2000--2001}
+{Countrywide Home Loans}
+{senior knowledge engineer, Artificial Intelligence}
+{{\tiny \faicon{double-angle-right}} ~ Implemented new features \& improved functionality for internal loan software.}
 \end{entrylist}
 
-\section{experience}
+%----------------------------------------------------------------------------------------
+%	SPEAKING SECTION
+%----------------------------------------------------------------------------------------
+\section{{} {} {\normalsize \faicon{microphone}}}
 
 \begin{entrylist}
-  \entry
-    {02–07 2009}
-    {LIP6/CNRS, Paris}
-    {Research Internship.}
-    {\emph{Visualization of complex networks.}}
-  \entry
-    {06–08 2008}
-    {ISCPIF/CNRS, Paris}
-    {Research Internship.}
-    {\emph{Diffusion in the Blogosphere. Happy Flu.}}
-  \entry
-    {06–08 2007}
-    {LIP6/CNRS, Paris}
-    {Research Internship.}
-    {\emph{Kernels in real world networks.}}
-  \entry
-    {07–08 2005}
-    {\href{http://www.kelkoo.com}{Kelkoo.com}}
-    {Summer job.}
-    {\emph{Creation of a keyword generator for Google Adwords.}}
-  \entry
-    {07–08 2004}
-    {\href{http://www.monsieurprix.com}{MonsieurPrix.com}}
-    {Summer job.}
-    {\emph{Development of an e-commerce product indexation spider.}}
+%------------------------------------------------
+\entry
+{2013}
+{Silicon Valley Code Camp}
+{presenter}
+{\href{http://www.siliconvalley-codecamp.com/Session/2013/who-are-your-customers}{{\tiny \color{LightGray}\faicon{link}} ~ Who are your customers?}}
+%------------------------------------------------
+\entry
+{2012}
+{Hamburg PHP Users Group}
+{guest speaker}
+{\href{https://speakerdeck.com/seemantk/developing-with-passion}{{\tiny \color{LightGray}\faicon{link}} ~  \textbf{P}assion, \textbf{H}appiness, \textbf{P}rogramming}}
+%------------------------------------------------
+\entry
+{2004}
+{FOSS.in}
+{keynote speaker}
+{Try open source, Try Gentoo Linux}
+%------------------------------------------------
 \end{entrylist}
 
-\section{applications}
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\section{{} {} {\normalsize \faicon{trophy}}}
 
 \begin{entrylist}
-  \entry
-    {2012}
-    {Who did I forget ?}
-    {\href{http://whodidiforget.com}{whodidiforget.com}}
-    {Guest list recommendation for Facebook events based on friends already attending the event.}
-  \entry
-    {2011}
-    {Fellows}
-    {\href{http://fellows-exp.com}{fellows-exp.com}}
-    {Automatic community detection among Facebook Friends in order to validate the \emph{cohesion} measure, creation of friend lists.}
-  \entry
-    {2008}
-    {Happy Flu}
-    {\href{http://happyflu.com}{happyflu.com}}
-    {Experiment aimed to measure viral spreading of content across the blogosphere.}
+%------------------------------------------------
+\entry
+{2008}
+{3M}
+{pyramid of excellence, Digital Dentistry}
+{``business unit award for outstanding achievement."}
+%------------------------------------------------
+\entry
+{1999}
+{Rochester Institute of Technology}
+{research assistantship, Hewlett-Packard}
+{Awarded academic \& living expenses to perform thesis research.}
+%------------------------------------------------
+\entry
+{1989--1994}
+{University of Rochester}
+{scholarship, Genesee}
+{Merit-based award for percentage of academic expenses.}
+%------------------------------------------------
 \end{entrylist}
 
-\section{publications}
 
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
 
-\printbibsection{article}{article in peer-reviewed journal}
-\begin{refsection}
-  \nocite{*}
-  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
-\end{refsection}
-\begin{refsection}
-  \nocite{*}
-  \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
-\end{refsection}
-\printbibsection{misc}{other publications}
-\printbibsection{report}{research reports}
+\section{{} {} {\normalsize \faicon{beaker} ~ \faicon{book}}}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2000}
+{Rochester Institute of Technology}
+{m.s candidate, Computer Science}
+{Specialty: Artificial Intelligence\\
+Thesis: ``Image Processing with Cellular Neural Networks''}
+%------------------------------------------------
+\entry
+{1994}
+{University of Rochester}
+{b.s., Optics}
+{Minor: Economics\\
+Certificate: Management} 
+%------------------------------------------------
+\entry
+{1979-1989}
+{International School of Lusaka}
+{high school, GCSE/`O' Levels}
+{Majors: Economics, Physics}
+\end{entrylist}
+
 
 \end{document}
