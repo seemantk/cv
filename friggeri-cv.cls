@@ -100,10 +100,11 @@
   {%
     \color{%
       \ifcase\value{colorCounter}%
+	Green\or%
+	DarkBlue\or%
+	Orange\or%
 	purple\or%
 	blue\or%
-	Goldenrod\or%
-	green\or%
         headercolor\fi%
     } #1#2#3%
   }%
