@@ -100,7 +100,7 @@
   {%
     \color{%
       \ifcase\value{colorCounter}%
-	Green\or%
+	green\or%
 	DarkBlue\or%
 	Orange\or%
 	purple\or%
