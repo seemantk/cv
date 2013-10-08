@@ -100,11 +100,12 @@
   {%
     \color{%
       \ifcase\value{colorCounter}%
-	green\or%
-	DarkBlue\or%
+	LightGreen\or%
+	LightBlue\or%
 	Orange\or%
 	purple\or%
-	blue\or%
+	red\or%
+	orange\or%
         headercolor\fi%
     } #1#2#3%
   }%
@@ -120,9 +121,9 @@
   \par\vspace{\parskip}
 }
 
-\renewcommand{\subsection}[2]{
+\renewcommand{\subsection}[1]{
   \par\vspace{.5\parskip}%
-  \Large\headingfont\color{headercolor} #2%
+  \Large\headingfont\color{headercolor} #1%
   \par\vspace{.25\parskip}%
 }
 
@@ -308,3 +309,12 @@
 
 \RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=1.8cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%
+% Seemant's Tweaks %
+%%%%%%%%%%%%%%%%%%%%
+\newcommand{\thdesc}[2]{%
+    #1, \textbf{\color{DarkGray}{#2}}
+}
+
+
