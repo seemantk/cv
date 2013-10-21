@@ -24,6 +24,8 @@
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
+\definecolor{skype}{HTML}{00AFF0}
+\definecolor{github}{HTML}{000000}
 \definecolor{gmail}{HTML}{F90101}
 \definecolor{linkedin}{HTML}{4875B4}
 \definecolor{twitter}{HTML}{33CCFF}
@@ -99,14 +101,14 @@
 \def\@sectioncolor#1#2#3{%
   {%
     \color{%
-      \ifcase\value{colorCounter}%
-	LightGreen\or%
-	LightBlue\or%
-	Orange\or%
-	purple\or%
-	red\or%
-	orange\or%
-        headercolor\fi%
+%      \ifcase\value{colorCounter}%
+	Crimson%\or%
+%	red\or%
+%	Orange\or%
+%	LightBlue\or%
+%	DarkYellow\or%
+%	LightGreen\or%
+%        headercolor\fi%
     } #1#2#3%
   }%
   \stepcounter{colorCounter}%
@@ -171,6 +173,25 @@
   \end{textblock}
   \let\section\oldsection
 }
+
+
+
+%%%%%%%%%%%%%%%%
+% Other tweaks %
+%%%%%%%%%%%%%%%%
+
+\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=1.8cm,nohead,nofoot]{geometry}
+\RequirePackage[urlcolor=Blue,colorlinks=true]{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%
+% Seemant's Tweaks %
+%%%%%%%%%%%%%%%%%%%%
+\newcommand{\thdesc}[2]{%
+    \color{black}{\thinfont{#1, }}\color{DarkGray}{\bodyfont{#2}}
+}
+
+
+
 
 %%%%%%%%%%%%%%%%
 % Bibliography %
@@ -300,21 +321,4 @@
   \sort[direction=descending]{\field{year}}
   \sort[direction=descending]{\field{month}}
 }
-
-
-
-%%%%%%%%%%%%%%%%
-% Other tweaks %
-%%%%%%%%%%%%%%%%
-
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=1.8cm,nohead,nofoot]{geometry}
-\RequirePackage{hyperref}
-
-%%%%%%%%%%%%%%%%%%%%
-% Seemant's Tweaks %
-%%%%%%%%%%%%%%%%%%%%
-\newcommand{\thdesc}[2]{%
-    #1, \textbf{\color{DarkGray}{#2}}
-}
-
 
