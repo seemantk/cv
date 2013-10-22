@@ -99,18 +99,7 @@
 
 \newcounter{colorCounter}
 \def\@sectioncolor#1#2#3{%
-  {%
-    \color{%
-%      \ifcase\value{colorCounter}%
-	Crimson%\or%
-%	red\or%
-%	Orange\or%
-%	LightBlue\or%
-%	DarkYellow\or%
-%	LightGreen\or%
-%        headercolor\fi%
-    } #1#2#3%
-  }%
+  {\color{Crimson} #1#2#3%}%
   \stepcounter{colorCounter}%
 }
 
@@ -147,7 +136,7 @@
   #1&\parbox[t]{11.8cm}{%
     {\small\addfontfeature{Color=gray} \textbf{#2}}%
     \hfill%
-    {\scriptsize\addfontfeature{Color=lightgray} #3}\\%
+    {\scriptsize\addfontfeature{Color=DarkGray} #3}\\%
     {\small #4}\vspace{\parsep}%
   }\\}
 
@@ -181,13 +170,13 @@
 %%%%%%%%%%%%%%%%
 
 \RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=1.8cm,nohead,nofoot]{geometry}
-\RequirePackage[urlcolor=Blue,colorlinks=true]{hyperref}
+\RequirePackage[urlcolor=Blue,colorlinks=true,pdfauthor={Seemant Kulleen},pdfproducer={Seemant Kulleen},pdfcreator={Seemant Kulleen}]{hyperref}
 
 %%%%%%%%%%%%%%%%%%%%
 % Seemant's Tweaks %
 %%%%%%%%%%%%%%%%%%%%
 \newcommand{\thdesc}[2]{%
-    \color{black}{\thinfont{#1, }}\color{DarkGray}{\bodyfont{#2}}
+    \color{black}{\textbf{\thinfont{#1}}}\color{DarkGray}{\bodyfont{#2}}
 }
 
 
