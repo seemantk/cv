@@ -23,66 +23,60 @@
 \usepackage{graphicx}
 \usepackage{rotating}
 
+\hypersetup{
+	pdftitle={Product Management Executive Resume},
+	pdfsubject={Product Management Executive},
+	pdfkeywords={product management} {customer experience}
+}
+
 \newcommand{\rotxc}[1]{\begin{sideways}#1\end{sideways}}
 \newcommand{\invert}[1]{\rotxc{\rotxc{#1}}}
 
 \begin{document}
 % Use the actual job title for the position I'm applying
-\header{seemant}{kulleen}{executive, {\color{LightGray}{\bodyfont products \& support}}}
-%------------------------------------------------------------------------------------
+\header{seemant}{kulleen}{vice-president}{product}
+%-------------------------------------------------------------------------------
 %	SIDEBAR SECTION
-%-------------------------------x----------------------------------------------------
+%--------------------------x----------------------------------------------------
 \begin{aside} % In the aside, each new line forces a line break
-\section{{\scriptsize \reflectbox{\invert{\faicon{key}}}}}
-product development
-product management
-team turnaround
-emotional intelligence
-user experience
+\section{{\scriptsize \faicon{fire}}}
+%\reflectbox{\invert{\faicon{key}}}}}
+team development
+performant teams
 customer success
-customer loyalty
+loyal customers
+user experience
 data visualization
+team turnaround
+core values
 %--------------------------
 ~
 ~
-\section{{\scriptsize \faicon{anchor}}}
-jack london square, ca
-%--------------------------
-~
-~
-\section{\href{tel:617.407.0446}{\scriptsize \faicon{phone-sign}}}
+\section{\href{tel:617.407.0446}{\scriptsize \faicon{phone}}}
 +1 (617) 407 0446
 %--------------------------
 ~
 ~
-\section{\href{skype:seemantk}{{\scriptsize \faicon{skype}}}}
+\section{\href{skype:seemantk}{\color{skype}{\scriptsize \faicon{skype}}}}
 seemant\textbf{k}
 %--------------------------
 ~
 ~
-\section{\href{mailto:seemantk@gmail.com}{\scriptsize \faicon{google-plus-sign}~\faicon{envelope-alt}}}
+\section{\href{mailto:seemantk@gmail.com}{\color{gmail}{\scriptsize \faicon{google-plus}~\faicon{envelope-alt}}}}
 seemant\textbf{k}
 %--------------------------
 ~
 ~
-\section{\href{http://www.github.com/seemantk}{{\scriptsize \faicon{github-sign}}} ~ \href{http://www.twitter.com/seemantk}{{\scriptsize \faicon{twitter-sign}}} ~ \href{http://www.linkedin.com/in/seemantk}{{\scriptsize \faicon{linkedin-sign}}}}
+\section{\href{http://www.github.com/seemantk}{\color{github}{\scriptsize \faicon{github-sign}}} ~ \href{http://www.twitter.com/seemantk}{\color{twitter}{\scriptsize \faicon{twitter}}} ~ \href{http://www.linkedin.com/in/seemantk}{\color{linkedin}{\scriptsize \faicon{linkedin-sign}}}}
 seemant\textbf{k}
-%--------------------------
-%\section{{\scriptsize \faicon{laptop}}}
-%{ruby
-%css3, html5
-%python, django
-%javascript, d3.js
-%linux, bash
-%c, c++}
 %--------------------------
 \end{aside}
 
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 %	EMPLOYMENT EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 
-\section{{}{} {\normalsize\faicon{wrench}~\faicon{cog}~\faicon{cogs}}}
+\section{{}{} {\normalsize\faicon{cogs}~\faicon{briefcase}~\faicon{wrench}}}
 %\section{{}{} {}}
 
 \begin{entrylist}
@@ -92,64 +86,68 @@ seemant\textbf{k}
 \entry
 {2011--2013}
 {Engine Yard, Inc.}
-{\thdesc{executive}{product management}}
-{{\tiny \faicon{double-angle-right}} ~ reintroduced PM into flagship platform-as-a-service (PaaS) product development.\\
-{\tiny \faicon{double-angle-right}} ~ reintegrated internal/external feedback \& QA into development \& release processes.\\
-{\tiny \faicon{double-angle-right}} ~ created roadmap process with agile product development \& cadenced release cycle.}
+{\thdesc{director}{customer support}\thdesc{|~business manager}{support \& services}}
+{%
+{\tiny \faicon{double-angle-right}} ~ defined packages \& pricing for Customer Support \& Professional Services offerings.\\
+{\tiny \faicon{double-angle-right}} ~ rewrote \& optimized customer support website for human \& search engine visitors.\\
+{\tiny \faicon{double-angle-right}} ~ implemented \emph{SOC-2}-compliant Customer Support Policy.\\
+{\tiny \faicon{double-angle-right}} ~ turned 30-member remote/global team from high-attrition to high-performance.\\
+
+{\tiny \faicon{bar-chart}} ~ effected 100\% paid-support coverage across customer base within 8 months.\\
+{\tiny \faicon{bar-chart}} ~ maintained 98\% customer satisfaction \& 97\% employee satisfaction within 6 months.\\
+{\tiny \faicon{bar-chart}} ~ achieved quarterly 15\% growth in premium-tier upsells within 20 months.%
+}
 %------------------------------------------------
 \entry
 {}
 {}
-{\thdesc{director}{customer support} \& \thdesc{business manager}{support \& services}}
-{{\tiny \faicon{double-angle-right}} ~ introduced simply executable processes for mass outages \& v.i.p. support.\\
-{\tiny \faicon{double-angle-right}} ~ defined packages \& pricing for Customer Support \& Professional Services offerings.\\
-{\tiny \faicon{double-angle-right}} ~ implemented \emph{SOC-2}-compliant Customer Support Policy.\\
-
-{\tiny \faicon{double-angle-right}} ~ executed cultural \& workflow changes: increased employee satisfaction \& retention.\\
-
-{\tiny \faicon{bar-chart}} ~ customer satisfaction steady at 98\% within 6 months (up from 79\%).\\
-{\tiny \faicon{bar-chart}} ~ 100\% customer coverage of paid support plans within first 8 months.\\
-{\tiny \faicon{bar-chart}} ~ quarterly 15\% increase in premium-tier upsells during 2\textsuperscript{nd} year.\\}
+{\thdesc{executive}{product management}}
+{%
+{\tiny \faicon{double-angle-right}} ~ defined, prioritized \& communicated roadmap for flagship PaaS (cloud) product.\\
+{\tiny \faicon{double-angle-right}} ~ reintegrated feedback \& QA into development \& release processes.\\
+{\tiny \faicon{double-angle-right}} ~ introduced predictable/cadenced release cycles into agile development workflow.\\%
+}
 %------------------------------------------------
 % Brontes/3M
 %------------------------------------------------
 \entry
 {2005--2011}
 {Brontes Technologies, a 3M company}
-{\thdesc{senior engineer}{systems engineering} \& \thdesc{interim lead}{IT}}
+{\thdesc{founder}{customer support}\thdesc{|~manager}{global integration}}
+{{\tiny \faicon{double-angle-right}} ~ created customer service at inaugural launch of 3D oral scanner (medical device).\\
+{\tiny \faicon{double-angle-right}} ~ assembled cross-functional alliances, teams, procedures \& processes.\\
+{\tiny \faicon{double-angle-right}} ~ scaled \& localized support staff \& logistics to cover US, EU and APAC regions.\\
+
+{\tiny \faicon{double-angle-right}} ~ ensured smooth adoption of technological disruption to traditional dental workflows.\\
+{\tiny \faicon{double-angle-right}} ~ implemented regulatory compliant customer support \& product improvement cycles.\\
+{\tiny \faicon{double-angle-right}} ~ represented voice of dentists \& labs into product strategy \& roadmap.\\
+
+{\tiny \faicon{bar-chart}} ~ team members nominated/awarded 3M Pyramid of Excellence 3 years in a row.%
+}
+%------------------------------------------------
+\entry
+{\emph{pre-launch}}
+{~}
+{\thdesc{senior engineer}{systems engineering}\thdesc{|~interim lead}{it}}
 {{\tiny \faicon{double-angle-right}} ~ developed image capture routines for (1\textsuperscript{st} generation) real-time 3D-video oral scanner.\\
 {\tiny \faicon{double-angle-right}} ~ architected secure data POC framework for dentists, labs, \& fabrication centers.\\
 {\tiny \faicon{double-angle-right}} ~ modernized development tools, environments, \& workflows.\\
-{\tiny \faicon{double-angle-right}} ~ hardened \& secured IT infrastructure (auth/auth, network, systems, services).}
-%------------------------------------------------
-\entry
-{\emph{post-acq'n}}
-{~}
-{\thdesc{founder}{customer service} \& \thdesc{manager}{global integration}}
-{{\tiny \faicon{double-angle-right}} ~ created customer service infrastructure during inaugural product launch.\\
-{\tiny \faicon{double-angle-right}} ~ assembled cross-functional workflow for timely issue resolution \& product feedback.\\
-{\tiny \faicon{double-angle-right}} ~ implemented systems to track, document, resolve \& measure customer issues.\\
-
-{\tiny \faicon{double-angle-right}} ~ represented voice of customer in product strategy \& roadmap sessions.\\
-{\tiny \faicon{double-angle-right}} ~ established \emph{EU}- \& \emph{HIPAA}-compliant service, repair \& quality management processes.\\
-{\tiny \faicon{double-angle-right}} ~ scaled support \& quality logistics to 3M \& 3\textsuperscript{rd}-party service providers (US \& EU).\\
-
-{\tiny \faicon{bar-chart}} ~ team members nominated/awarded 3M Pyramid of Excellence in 3 years running.\\}
+{\tiny \faicon{double-angle-right}} ~ hardened \& secured IT infrastructure (auth/auth, network, systems, services).\\}
 %------------------------------------------------
 % Gentoo Linux
 %------------------------------------------------
 \entry
 {2002--2007}
 {Gentoo Linux}
-{\thdesc{manager}{development} \& \thdesc{manager}{operations}}
+{\thdesc{manager}{development}\thdesc{|~manager}{operations}}
 {{\tiny \faicon{double-angle-right}} ~ introduced triage process for timely \& efficient handling of user issues.\\
 {\tiny \faicon{double-angle-right}} ~ lowered technical \& procedural barriers to entry for user-community involvement.\\
-{\tiny \faicon{double-angle-right}} ~ structured rapidly growing organization into functional \& logical teams.\\
+{\tiny \faicon{double-angle-right}} ~ structured (functionally \& logically) rapidly growing global organization.\\
 
-{\tiny \faicon{double-angle-right}} ~ held \& rebuilt developer team following mass attrition due to \href{http://www.gentoo.org/news/en/gwn/20030630-newsletter.xml}{project fork}.\\
+{\tiny \faicon{double-angle-right}} ~ held together \& rebuilt developer team following mass attrition due to project split. \textsuperscript{\href{http://www.gentoo.org/news/en/gwn/20030630-newsletter.xml}{\rotxc{\faicon{link}}}}\\
 
+{\tiny \faicon{bar-chart}} ~ grew 100\% volunteer development team from 15 to 250 within 24 months.\\
 {\tiny \faicon{bar-chart}} ~ installed user base grew from 750 to 1.5 million in 24 months.\\
-{\tiny \faicon{bar-chart}} ~ developer team (100\% volunteer) grew from 15 to 250 in 24 months.\\
 {\tiny \faicon{bar-chart}} ~ Distrowatch's 5\textsuperscript{th} most popular Linux distribution for 4 consecutive years.}
 %------------------------------------------------
 % Countrywide
@@ -161,51 +159,51 @@ seemant\textbf{k}
 %{{\tiny \faicon{double-angle-right}} ~ implemented new features \& improved functionality for loan-matching software.}
 %----------------------------------------------------------------------------------------
 \end{entrylist}
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 %       ELECTED POSITIONS
-%----------------------------------------------------------------------------------------
-\section{{} {} {\normalsize \faicon{group}~\reflectbox{\faicon{legal}}~\faicon{check}}}
+%-------------------------------------------------------------------------------
+\section{{} {} {\normalsize \faicon{check}~\reflectbox{\faicon{group}}~\faicon{linux}}}
 \begin{entrylist}
 \entry
-{2003-2007}
-{Gentoo Linux, Inc.}
-{\thdesc{founding member}{7-seat council}}
+{2003--2007}
+{Gentoo Linux Project}
+{\thdesc{founding member}{council}}
 {{\tiny \faicon{double-angle-right}} ~ liaised with corporate sponsors \& partners.\\
-{\tiny \faicon{bar-chart}} ~ re-elected 3 times, served 3 times (declined final nomination).\\}
+{\tiny \faicon{bar-chart}} ~ re-elected 3 times, served 3 times on 7-seat council.\\}
 %------------------------------------------------
 \entry
-{2003-2006}
+{2003--2006}
 {Gentoo Nonprofit Foundation}
-{\thdesc{founding trustee}{11-seat board}}
+{\thdesc{founding trustee}{board}}
 {{\tiny \faicon{double-angle-right}} ~ legal counsel liaison during 501(c)6 status filing.\\
-{\tiny \faicon{bar-chart}} ~ re-elected 3 times, served 4 times.}
+{\tiny \faicon{bar-chart}} ~ re-elected 3 times, served 4 times on 11-seat board.}
 %------------------------------------------------
 \end{entrylist}
-%----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 %	SPEAKING SECTION
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \section{{} {} {\normalsize \faicon{microphone}~\faicon{facetime-video}~\faicon{list-alt}}}
 
 \begin{entrylist}
 %------------------------------------------------
 \entry
 {2013}
-{Silicon Valley Code Camp}
+{Are you your own customer? \textsuperscript{\href{https://speakerdeck.com/seemantk/are-you-really-your-own-customer}{\rotxc{\faicon{link}}}}}
 {speaker}
-{``\href{http://www.siliconvalley-codecamp.com/Session/2013/who-are-your-customers}{Who are your customers?}''}
+{Silicon Valley Code Camp}
 %------------------------------------------------
 \entry
 {2012}
-{Hamburg PHP Users Group}
+{\textbf{P}assion, \textbf{H}appiness, \textbf{P}rogramming \textsuperscript{\href{https://speakerdeck.com/seemantk/developing-with-passion}{\rotxc{\faicon{link}}}}}
 {guest speaker}
-{``\href{https://speakerdeck.com/seemantk/developing-with-passion}{\textbf{P}assion, \textbf{H}appiness, \textbf{P}rogramming}''}
+{Hamburg PHP Users Group}
 %------------------------------------------------
 \entry
 {2005}
-{FOSS.in conference}
+{Try open source, Try Gentoo Linux}
 {keynote speaker}
-{``Try open source, Try Gentoo Linux''}
+{FOSS.in conference at bangalore, india}
 %------------------------------------------------
 \entry
 {2002--2005}
@@ -216,10 +214,44 @@ seemant\textbf{k}
 \end{entrylist}
 
 
-%----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
+%------------------------------------------------
+%	PUBLICATION SECTION
+%------------------------------------------------
+\section{{} {} {\normalsize \faicon{pencil}~\faicon{code}~\faicon{file-text-alt}}}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2003--2005}
+{Gentoo Developer's Handbook \textsuperscript{\href{http://www.gentoo.org/proj/en/devrel/handbook/handbook.xml}{\rotxc{\faicon{link}}}}}
+{\color{black}{\thinfont{author \& editor}}}
+{documentation of Gentoo's core values, including standards, policies \& procedures.}
+%------------------------------------------------
+\entry
+{2003--2005}
+{Gentoo Recruiter's Handbook \textsuperscript{\href{http://www.gentoo.org/proj/en/devrel/recruiters/}{\rotxc{\faicon{link}}}}}
+{\color{black}{\thinfont{author \& editor}}}
+{hr manual/procedures for recruitment \& retirement of Gentoo developers.}
+%------------------------------------------------
+\entry
+{2004}
+{USE flags in Gentoo \textsuperscript{\href{http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&chap=2}{\rotxc{\faicon{link}}}}}
+{\color{black}{\thinfont{author \& editor}}}
+{tutorial about one of Gentoo's key strengths around user customization.}
+%------------------------------------------------
+\entry
+{2004}
+{Gentoo Initscripts Guide \textsuperscript{\href{http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&chap=4}{\rotxc{\faicon{link}}}}}
+{\color{black}{editor}}
+{user guide for Gentoo's dependency-based init system \& scripts.}
+%------------------------------------------------
+\end{entrylist}
+
+
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 %	AWARDS SECTION
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 \section{{} {} {\normalsize \faicon{trophy}~\faicon{shield}~\faicon{gift}}}
 
 \begin{entrylist}
@@ -245,9 +277,9 @@ seemant\textbf{k}
 \end{entrylist}
 
 
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 %	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 
 \section{{} {} {\normalsize \faicon{book}~\faicon{beaker}~\faicon{beer}}}
 
@@ -257,8 +289,8 @@ seemant\textbf{k}
 {2000}
 {Rochester Institute of Technology}
 {\thdesc{m.s candidate}{computer science}}
-{focus: artificial intelligence\\
-thesis: ``Image Processing with Cellular Neural Networks''}
+{thesis: ``Image Processing with Cellular Neural Networks''\\
+focus: artificial intelligence}
 %------------------------------------------------
 \entry
 {1994}
@@ -270,46 +302,8 @@ certificate: management}
 \entry
 {1979-1989}
 {International School of Lusaka (Zambia)}
-{\thdesc{high school}{gcse \& 'o' levels}}
+{\thdesc{high school}{gcse \& o'levels}}
 {majors: physics, economics}
-%------------------------------------------------
-\end{entrylist}
-
-
-%------------------------------------------------
-%	PUBLICATION SECTION
-%------------------------------------------------
-\section{{} {} {\normalsize \faicon{pencil}~\faicon{code}~\faicon{file-text-alt}}}
-\begin{entrylist}
-%------------------------------------------------
-\entry
-{2004}
-{\href{http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&chap=2}{USE flags in Gentoo}}
-{\thdesc{author}{tutorial/manual}}
-{\emph{Later incorporated into the official \textup{Gentoo Developers Handbook}}}
-%------------------------------------------------
-\entry
-{2003}
-{\href{http://www.gentoo.org/proj/en/devrel/handbook/handbook.xml}{Gentoo Developer's Handbook}}
-{\thdesc{author \& editor}{guide/manual}}
-{\emph{``Founding'' document for Gentoo's Developer Relations team}}
-%------------------------------------------------
-\entry
-{2003}
-{\href{http://www.gentoo.org/proj/en/devrel/recruiters/}{Gentoo Recruiter's Handbook}}
-{\thdesc{author \& editor}{guide/manual}}
-{\emph{Assessing candidates, as well as logistics \& checklists for creating/terminating access.}}
-%------------------------------------------------
-\entry
-{2004}
-{\href{http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&chap=4}{Gentoo's Initscripts}}
-%{editor, \textbf{\color{DarkGray}guide/tutorial}}
-{\thdesc{editor}{guide/tutorial}}
-{\emph{Gentoo's initscripts were a user-friendly departure from mainstream Linux distributions.}}
-%------------------------------------------------
-%\entry
-%{2002-2007}
-%{\href{
 %------------------------------------------------
 \end{entrylist}
 \end{document}
