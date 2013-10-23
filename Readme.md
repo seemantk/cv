@@ -1,5 +1,5 @@
 # About
-Latest version of my CV, typesetted in Helvetica and using colors inspired by Monokai (there is an `print` option which renders in black and white, and reverts the header to dark on light, if printing on paper is needed).
+Latest version of my CV - forked from Adrien Friggeri's beautiful cv, typeset in Helvetica Neue for the text and FontAwesome for the icons.  Colors for the header are crimson.  Colors for links are blue.  Colors for all other icons are the original upstream colors (linkedin, twitter, skype, google, etc.).  There is a `print` option which renders in black and white, and reverses the header to dark on light, if printing on paper is needed).
 
 Uses TikZ for the header, XeTeX and fontspec to use Helvetica Neue, biblatex to print my publications and textpos for the aside.
 
