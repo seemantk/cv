@@ -97,10 +97,8 @@
 %%%%%%%%%%%%%
 \RequirePackage{parskip}
 
-\newcounter{colorCounter}
 \def\@sectioncolor#1#2#3{%
-  {\color{Crimson} #1#2#3%}%
-  \stepcounter{colorCounter}%
+  {\color{Crimson} #1#2#3}%
 }
 
 \renewcommand{\section}[1]{
